@@ -4,5 +4,4 @@ matplotlib
 seaborn == 0.10.0
 flask
 sklearn
-pickle
 joblib

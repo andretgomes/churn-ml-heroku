@@ -5,7 +5,11 @@ import joblib
 app = Flask(__name__)
 model = joblib.load(open('joblib_model.pkl', 'rb'))
 
-@app.route('/',methods=['POST'])
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/predict',methods=['POST'])
 def predict():
     # get data
     data = request.get_json(force=True)
@@ -24,4 +28,4 @@ def predict():
     return jsonify(results=output)
 
 if __name__ == "__main__":
-    app.run(port = 5000, debug=True)
+     app.run(debug=True)

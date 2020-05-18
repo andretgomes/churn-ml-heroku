@@ -1,9 +1,7 @@
 # Byte-compiled / optimized / DLL files
-vir_env 
 __pycache __ / 
 *.py[cod]
 *$py.class
-.DS_Store
 
 # C extensions
 *.so

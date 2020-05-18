@@ -1,12 +1,14 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+vir_env 
+__pycache __ / 
 *.py[cod]
 *$py.class
+.DS_Store
 
 # C extensions
 *.so
 
-# Distribution / packaging
+# Distribution / packagin
 .Python
 build/
 develop-eggs/
